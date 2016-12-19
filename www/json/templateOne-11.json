@@ -1,0 +1,46 @@
+{
+    "name": "门票",
+    "detail": [{
+        "id": 1,
+        "url": "img/ticket1.png",
+        "con": " 香港迪士尼门票成人2大1小合家欢套票香港迪斯尼乐",
+        "place": "多目的地",
+        "num": 30,
+        "price": 132
+    }, {
+        "id": 2,
+        "url": "img/ticket2.png",
+        "con": "【澳门水舞间门票A区新濠影汇酒店摩天轮】新濠天地",
+        "place": "多目的地",
+        "num": 31,
+        "price": 231
+    }, {
+        "id": 3,
+        "url": "img/ticket3.png",
+        "con": "日本环球影城门票 大阪环球影城门票USJ 日本景点门",
+        "place": "多目的地",
+        "num": 33,
+        "price": 319
+    }, {
+        "id": 4,
+        "url": "img/ticket4.png",
+        "con": " Q家旅行泰国芭提雅蒂芬妮人妖秀芭堤雅tiffany show",
+        "place": "多目的地",
+        "num": 20,
+        "price": 329
+    }, {
+        "id": 5,
+        "url": "img/ticket5.png",
+        "con": "【当天可订】成都大熊猫基地门票 成都大熊猫繁育研",
+        "place": "多目的地",
+        "num": 23,
+        "price": 239
+    }, {
+        "id": 6,
+        "url": "img/ticket6.png",
+        "con": " 新加坡景点门票 圣淘沙新加坡环球影城门票实体电子 ",
+        "place": "多目的地",
+        "num": 28,
+        "price": 149
+    }]
+}

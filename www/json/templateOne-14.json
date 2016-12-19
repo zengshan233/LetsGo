@@ -1,0 +1,46 @@
+{
+    "name": "特色体验",
+    "detail": [{
+        "id": 1,
+        "url": "img/special1.png",
+        "con": "【特色体验】帕劳出海潜水 体验深潜 水上项目 出海",
+        "place": "多目的地",
+        "num": 30,
+        "price": 1329
+    }, {
+        "id": 2,
+        "url": "img/special2.png",
+        "con": " 限时超低价厦门五缘湾拓海帆船俱乐部门票/厦门帆船体验特色景点",
+        "place": "多目的地",
+        "num": 31,
+        "price": 2318
+    }, {
+        "id": 3,
+        "url": "img/special3.png",
+        "con": "台湾台中特色一日游 经典拼车 体验绝美日落 台中文",
+        "place": "多目的地",
+        "num": 33,
+        "price": 3199
+    }, {
+        "id": 4,
+        "url": "img/special4.png",
+        "con": "丽江大理5天4晚纯玩跟团游 特色体验 云南旅游 丽江",
+        "place": "多目的地",
+        "num": 20,
+        "price": 3299
+    }, {
+        "id": 5,
+        "url": "img/special5.png",
+        "con": "AL欧洲旅游挪威特罗姆瑟哈士奇雪橇 特色驾驶体验",
+        "place": "多目的地",
+        "num": 23,
+        "price": 2399
+    }, {
+        "id": 6,
+        "url": "img/special6.png",
+        "con": "香港-毛里求斯7天5晚自由行 态度旅行树酒店 体验当",
+        "place": "多目的地",
+        "num": 28,
+        "price": 1499
+    }]
+}

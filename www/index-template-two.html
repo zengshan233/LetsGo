@@ -1,0 +1,72 @@
+<div class="bar bar-header nation">
+    <button ng-click="back()" class="button button-clear iconfont icon-fanhui"></button>
+    <p on-touch="search()"><span class="iconfont icon-icon1"></span>搜索目的地/折扣/关键字</p>
+    <button class="button button-clear all-goods">全部商品</button>
+</div>
+<ion-content>
+    <div class="nation-banner" ng-style="{backgroundImage:'url('+nation.url+')'}">
+        <div>
+            <p>{{nation.name}}</p>
+            <p>{{nation.Ename}}</p>
+        </div>
+    </div>
+    <div class="options">
+        <div class="box row">
+            <div class="col option" ng-repeat='item in options[0] '>
+                <a class="link" href="#/common1/{{item.id}}">
+                    <span class="iconfont {{item.ico}}" ng-style='{color: item.col} '></span>
+                    <p>{{item.con}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="local">
+        <div class="title">当地玩乐</div>
+        <div class="row row1">
+            <a class="col" href="#/common1/11">景点门票</a>
+            <a class="col" href="#/common1/15">当地游</a>
+        </div>
+        <div class="row row2">
+            <a class="col" href="#/common1/16">接送机</a>
+            <a class="col" href="#/common1/10">美食购物</a>
+            <a class="col" href="#/common1/5">酒店</a>
+        </div>
+    </div>
+
+    <div class="place">
+        <p class="title">说走就走</p>
+        <div style="height:14rem;">
+            <div class="swiper-container swiper">
+                <div class="swiper-wrapper row">
+                    <div class="swiper-slide slide col-80" style="background-image:url('img/love1.jpg ')"></div>
+                    <div class="swiper-slide  slide col-80" style="background-image:url('img/love2.jpg ')"></div>
+                    <div class="swiper-slide slide col-80" style="background-image:url('img/love3.jpg ')"></div>
+                </div>
+                <div class="swiper-pagination"></div>
+            </div>
+        </div>
+        <div class="detail"></div>
+    </div>
+
+    <div class="hot_now hot-opt" ng-repeat="(index,item) in ary">
+        <div class="opt">
+            <p>{{item[0]}}<span class="iconfont icon-dian2"></span>{{item[1]}}</p>
+            <p>
+                <a class="iconfont icon-youjiantou link" href="#/common1/{{item[2]}}"></a>
+            </p>
+        </div>
+        <ion-scroll delegate-handle="scroll1" direction="x" class="" on-scroll="">
+            <div class="trip_wrapper">
+
+                <div class="trip" ng-repeat="val in json[index].detail">
+                    <a class="link" href="{{'#/goods/'+(index+1)+'/'+val.id}}">
+                        <p class="goods-pic" ng-style="{backgroundImage:'url( '+val.url+') '}"></p>
+                        <p class="trip_text">{{val.con}}</p>
+                        <p><span>{{val.price}}</span>元起</p>
+                    </a>
+                </div>
+
+            </div>
+        </ion-scroll>
+    </div>
+</ion-content>

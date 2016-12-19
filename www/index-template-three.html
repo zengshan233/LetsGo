@@ -1,0 +1,31 @@
+<div class="bar bar-header news_info">
+    <button ng-click="back()" class="button button-clear iconfont icon-fanhui"></button>
+    <h1 class="title">{{title}}</h1>
+</div>
+<ion-content ng-style="{background:color}">
+    <div class="top-img">
+        <img src="{{url}}" alt="" />
+    </div>
+    <div class="row sale">
+        <div class="col">
+            <div class="like" ng-repeat="item in data1.detail">
+                <img src="{{item.url}}" alt="" />
+                <p class="like-con">{{item.con}}</p>
+                <div class="like_price">
+                    <p>已售{{item.num}}件</p>
+                    <p><span>{{item.price}}</span>元起</p>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="like" ng-repeat="item in data2.detail">
+                <img src="{{item.url}}" alt="" />
+                <p class="like-con">{{item.con}}</p>
+                <div class="like_price">
+                    <p>已售{{item.num}}件</p>
+                    <p><span>{{item.price}}</span>元起</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</ion-content>

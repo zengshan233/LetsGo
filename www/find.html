@@ -1,0 +1,85 @@
+<div class="nav">
+    <div class="row">
+        <p class="col" ng-click="directTo(0)" ng-class="{true:'on',false:'off'}[nav0]">看世界</p>
+        <p class="col" ng-click="directTo(1)" ng-class="{true:'on',false:'off'}[nav1]">指南</p>
+        <p class="col" ng-click="directTo(2)" ng-class="{true:'on',false:'off'}[nav2]">排行榜</p>
+    </div>
+</div>
+
+
+
+
+
+
+
+<div class="find-wrapper" on-touch="ontouch($event)" on-drag="ondrag($event)" on-release="onrelease($event)">
+
+    <div class="swiper-container swiper0">
+        <div class="swiper-wrapper row ">
+            <div class="swiper-slide slide col-100">
+                <ion-content class="find">
+                    <div class="see-the-world">
+                        <div class="see">
+                            <h2>看世界</h2>
+                            <p>世界那么大，去看看吧！</p>
+                        </div>
+                    </div>
+                    <p class="just-go"><span class="iconfont "></span>精品游记</p>
+                    <div class="days" ng-repeat="item in date">
+                        <div class="img" ng-style="{backgroundImage:'url('+item.img+')'}"></div>
+                        <p class="con">{{item.con}}</p>
+                        <p class="users"><span class="iconfont icon-shizhong"></span>{{item.date}}<span class="iconfont icon-wode3"></span>{{item.user}}</p>
+                    </div>
+                </ion-content>
+            </div>
+            <div class="swiper-slide  slide">
+                <ion-content class="guild-con">
+                    <div class="see-the-world guild">
+                        <div class="see">
+                            <h2>指南</h2>
+                            <p>全球旅行精华，一手掌握</p>
+                            <p class="hot">热门推荐</p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col">
+                            <div class="country" ng-repeat="item in data1" ng-style="{backgroundImage:'url('+item.url+')'}">
+                                <p>{{item.name}}</p>
+                                <p>{{item.Ename}}</p>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="country" ng-repeat="item in data2" ng-style="{backgroundImage:'url('+item.url+')'}">
+                                <p>{{item.name}}</p>
+                                <p>{{item.Ename}}</p>
+                            </div>
+                        </div>
+                    </div>
+                </ion-content>
+            </div>
+            <div class="swiper-slide slide">
+                <ion-content class="rank-con">
+                    <div class="see-the-world guild rank">
+                        <div class="see">
+                            <h2>排行榜</h2>
+                            <p>旅行精选由数千万名旅客选出</p>
+                            <p class="hot">旅行者之选</p>
+                        </div>
+                    </div>
+
+                    <div class="rank-detail" ng-repeat="item in rank">
+                        <div class="bg" ng-style="{backgroundImage:'url('+item.img+')'}">
+                            <p><span class="iconfont icon-jingwaiyoumudedi"></span></p>
+                            <p>旅行者之选</p>
+                            <p>{{item.con}}</p>
+                        </div>
+                        <div class="row">
+                            <p class="col">亚洲</p>
+                            <p class="col">全球</p>
+                        </div>
+                    </div>
+                </ion-content>
+            </div>
+        </div>
+    </div>
+</div>

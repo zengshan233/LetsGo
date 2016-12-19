@@ -1,0 +1,46 @@
+{
+    "name": "citywalk",
+    "detail": [{
+        "id": 1,
+        "url": "img/citywalk1.png",
+        "con": "【LadyGaga推荐】曼谷克里普索人妖秀·Calypso Cabaret",
+        "place": "泰国",
+        "num": 30,
+        "price": 329
+    }, {
+        "id": 2,
+        "url": "img/citywalk2.png",
+        "con": "曼谷一日游【大皇宫+玉佛寺+三攀鳄鱼湖】",
+        "place": "曼谷",
+        "num": 31,
+        "price": 318
+    }, {
+        "id": 3,
+        "url": "img/citywalk3.png",
+        "con": "台中一日游 散拼自由行",
+        "place": "台湾",
+        "num": 33,
+        "price": 199
+    }, {
+        "id": 4,
+        "url": "img/citywalk4.png",
+        "con": "【易途8】清迈夜间动物园一日游（步行区+缆车 不含接送）成人票",
+        "place": "清迈",
+        "num": 20,
+        "price": 299
+    }, {
+        "id": 5,
+        "url": "img/citywalk5.jpg",
+        "con": "韩国自由行专享 韩国首尔市区包车一日游服务/全程中文导游/行程自由 <首尔南山韩屋村+广藏市场+汉江游船+新罗免税店1日游>龙山SPA汗蒸体验",
+        "place": "首尔",
+        "num": 23,
+        "price": 399
+    }, {
+        "id": 6,
+        "url": "img/citywalk6.jpg",
+        "con": "【易途8】香港迪士尼乐园门票中文1日票 儿童票",
+        "place": "多目的地",
+        "num": 28,
+        "price": 499
+    }]
+}

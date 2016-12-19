@@ -1,0 +1,60 @@
+[
+    [{
+        "id": 1,
+        "ico": "icon-ziyouxing",
+        "con": "自由行",
+        "col": "#1fdab0"
+    }, {
+        "id": 2,
+        "ico": "icon-jipiao",
+        "con": "机票",
+        "col": "#f76e59"
+    }, {
+        "id": 3,
+        "ico": "icon-chengshi",
+        "con": "城市玩乐",
+        "col": "#ffc038"
+    }, {
+        "id": 4,
+        "ico": "icon-qianzheng",
+        "con": "签证",
+        "col": "#41dbf8"
+    }],
+    [{
+        "id": 5,
+        "ico": "icon-jiudian",
+        "con": "酒店",
+        "col": "#41dbf8"
+    }, {
+        "id": 6,
+        "ico": "icon-youlun",
+        "con": "邮轮",
+        "col": "#ffc038"
+    }, {
+        "id": 7,
+        "ico": "icon-luojiaodian",
+        "con": "CityWalk",
+        "col": "#f76e59"
+    }, {
+        "id": 8,
+        "ico": "icon-llroutedriveicon",
+        "con": "租车",
+        "col": "#1fdab0"
+    }],
+    [{
+        "id": 9,
+        "ico": "icon-faxian",
+        "con": "发现",
+        "col": "#1fdab0"
+    }, {
+        "id": 10,
+        "ico": "icon-meishi",
+        "con": "美食",
+        "col": "#f76e59"
+    }, {
+        "id": 11,
+        "ico": "icon-gengduo",
+        "con": "更多",
+        "col": "#ffc038"
+    }]
+]

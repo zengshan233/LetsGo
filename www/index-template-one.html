@@ -1,0 +1,30 @@
+<ion-view>
+    <div class="head-wrapper">
+        <div class="bar bar-header news_info row search-detail">
+            <button ng-click="back()" class="button button-clear iconfont icon-fanhui"></button>
+            <p class="col-80 search"><span class="iconfont icon-icon1"></span> 按关键字搜索</p>
+        </div>
+        <div class="row search-opt">
+            <p class="col">{{data.name}}<span class="iconfont icon-xiala"></span></p>
+            <p class="col">目的地<span class="iconfont icon-xiala"></span></p>
+            <p class="col">筛选<span class="iconfont icon-xiala"></span></p>
+            <p class="col"><span class="iconfont icon-rectangle52rectangle52-copy"></span>排序</p>
+        </div>
+    </div>
+    <ion-content>
+        <div class="blank"></div>
+        <div class="goods-list" ng-repeat="item in data.detail">
+            <a href="{{'#/goods/'+num+'/'+item.id}}">
+                <p><img src="{{item.url}}" alt="" /></p>
+                <div class="list-detail">
+                    <p><span>{{data.name}}</span><i>|<i><span class="iconfont icon-xiao31"></span> {{item.place}}</p>
+            <p class="content">{{item.con}}</p>
+            <div class="price">
+                <p>{{item.num}}件已售</p>
+                <p><span>{{item.price}}</span>元起</p>
+            </div>
+        </div>
+        </a>
+    </div>
+    </ion-content>
+    </ion-view>

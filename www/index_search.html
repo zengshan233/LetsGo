@@ -1,0 +1,15 @@
+<ion-view>
+    <div class="bar bar-header item-input-inset search">
+        <label class="item-input-wrapper">
+    <i class="icon iconfont icon-icon1"></i>
+    <input  type="search" placeholder="搜索目的地/折扣/关键字">
+  </label>
+        <button class="button button-clear" ng-click="back()">
+    取消
+  </button>
+    </div>
+    <p class="hot_search"><span class="iconfont icon-remen"></span>热门搜索</p>
+    <div class="search_wrapper">
+        <span ng-repeat="item in data">{{item}}</span>
+    </div>
+</ion-view>

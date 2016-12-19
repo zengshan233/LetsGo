@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="initial-scale=1, maximum-scale=1, user-scalable=no, width=device-width" />
+    <title>LetsGo</title>
+    <link rel="stylesheet" href="css/ionic.min.css">
+    <link rel="stylesheet" href="css/iconfont.css">
+    <link rel="stylesheet" href="css/index.min.css">
+    <link rel="stylesheet" href="css/swiper-3.4.0.min.css">
+    <link rel="stylesheet" href="css/profile.min.css">
+    <link rel="stylesheet" href="css/find.min.css">
+    <script src="js/ionic.bundle.min.js"></script>
+    <script src="js/ionic-cyf-directives.min.js"></script>
+    <script src="js/swiper.min.js"></script>
+    <script src="js/ng-cordova.min.js"></script>
+    <script src="cordova.js"></script>
+    <script src="js/main.js"></script>
+</head>
+
+<body ng-app="myApp" ng-controller="myController">
+    <ion-nav-view></ion-nav-view>
+    <script id="tplTabs" type="text/ng-template">
+        <ion-view>
+            <cyf-tabs only-external="true" effect="fade" class="tabs-positive tabs-icon-top">
+                <cyf-tab view-name="view1" title="首页" icon-on="iconfont icon-shouye" icon-off="iconfont icon-shouye1" ui-sref="tab1"></cyf-tab>
+                <cyf-tab view-name="view2" title="发现" icon-on="iconfont icon-faxian1" icon-off="iconfont icon-faxian2" ui-sref="tab2"></cyf-tab>
+                <cyf-tab view-name="view3" title="目的地" icon-on="iconfont icon-feiji2" icon-off="iconfont icon-feiji1" ui-sref="tab3"></cyf-tab>
+                <cyf-tab view-name="view4" title="个人中心" icon-on="iconfont icon-zhayanxiaolian" icon-off="iconfont icon-xiaolian" ui-sref="tab4"></cyf-tab>
+            </cyf-tabs>
+        </ion-view>
+    </script>
+
+
+</body>
+
+</html>

@@ -1,0 +1,46 @@
+{
+    "name": "WIFI/电话卡",
+    "detail": [{
+        "id": 1,
+        "url": "img/wifi1.png",
+        "con": "浙江电信4G上网卡无线上网卡流量卡电话卡手机卡0月租资",
+        "place": "多目的地",
+        "num": 30,
+        "price": 132
+    }, {
+        "id": 2,
+        "url": "img/wifi2.png",
+        "con": "韩国电话卡5天7天1.2g上网流量手机sim卡旅游通话",
+        "place": "多目的地",
+        "num": 31,
+        "price": 231
+    }, {
+        "id": 3,
+        "url": "img/wifi3.png",
+        "con": "印尼巴厘岛美娜多手机电话上网wifi流量卡3G4G高速",
+        "place": "多目的地",
+        "num": 33,
+        "price": 319
+    }, {
+        "id": 4,
+        "url": "img/wifi4.png",
+        "con": "老挝电话卡7天3G手机卡30天4G网速万象无线流量",
+        "place": "多目的地",
+        "num": 20,
+        "price": 329
+    }, {
+        "id": 5,
+        "url": "img/wifi5.png",
+        "con": "以色列电话卡无限流量上网卡旅游手机卡4g不限中东",
+        "place": "多目的地",
+        "num": 23,
+        "price": 239
+    }, {
+        "id": 6,
+        "url": "img/wifi6.png",
+        "con": "香港电话卡iPhone6/5S上网卡4天无线不限流量移动",
+        "place": "多目的地",
+        "num": 28,
+        "price": 149
+    }]
+}

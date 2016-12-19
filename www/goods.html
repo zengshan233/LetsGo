@@ -1,0 +1,53 @@
+<div class="bar bar-header news_info">
+    <button ng-click="back()" class="button button-clear iconfont icon-fanhui"></button>
+    <h1 class="title">商品详情</h1>
+</div>
+<ion-content>
+
+    <div class="like like-goods">
+        <img src="{{goods.url}}" alt="" />
+        <p class="like-con">{{goods.con}}</p>
+        <div class="like_price">
+            <p><span>{{goods.price}}</span>元起</p>
+            <p>浏览：233&nbsp;&nbsp;&nbsp;已售: {{goods.num}}件</p>
+        </div>
+    </div>
+
+    <div class="date">
+        <div>
+            <p><span class="iconfont icon-date"></span>选择产品类型/日期</p>
+            <p><span class="iconfont icon-jiantouyou"></span></p>
+        </div>
+        <p class="setOut">2月、3月多日期出发</p>
+        <p class="preserve">请至少提前16天预订</p>
+    </div>
+
+    <div class="review">
+        <div class="comment-info">
+            <p><span class="iconfont icon-dianping1 comment"></span>点评<span class="iconfont icon-pingjia4xing star"></span> </p>
+            <p>共11条评论 ></p>
+        </div>
+        <div class="comment-con">
+            <div>
+                <span class="iconfont icon-svgmoban67"></span>
+                <p>（王尼玛）</p>
+            </div>
+            <p class="comment-detail">： 很不错推荐购买。便宜实在！</p>
+        </div>
+
+    </div>
+
+    <div class="agency">
+        <p class="brand"></p>
+        <div>
+            <p>途牛旅游网</p>
+            <p><span class="iconfont icon-ruzhushangjia"></span>入住商家<span class="iconfont icon-renzhengshangjia"></span>认证商家</p>
+        </div>
+        <span class="iconfont icon-dianhua phone"></span>
+    </div>
+    <p></p>
+</ion-content>
+<div class="goods-order">
+    <p><span class="iconfont icon-wodezixun"></span>咨询&nbsp;<span class="iconfont icon-shoucang2"></span>收藏</p>
+    <p>立即预订</p>
+</div>

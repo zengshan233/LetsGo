@@ -1,0 +1,31 @@
+<div class="pick">
+    <p class="choose">选择目的地</p>
+    <div class="row">
+        <p class="col-80" on-touch="search()"><span class="iconfont icon-icon1"></span>搜索国家/城市</p>
+    </div>
+</div>
+
+<div class="area-wrapper">
+    <div class="scroll-wrapper">
+        <ion-scroll direction="y" class="area">
+            <p ng-repeat="(index,item) in area" ng-click="country(index,item)">{{item}}</p>
+        </ion-scroll>
+    </div>
+    <div class="nations">
+        <p class="title"><span class="iconfont {{icon}}"></span>{{continent}}全部</p>
+        <div class="row">
+            <div class="col">
+                <a href="#/common2/{{item.id}}" ng-repeat="(index,item) in nation" ng-if="index<3" ng-style="{backgroundImage:'url('+item.url+')'}">
+                    <p>{{item.name}}</p>
+                    <p>{{item.Ename}}</p>
+                </a>
+            </div>
+            <div class="col">
+                <a href="#/common2/{{item.id}}" ng-repeat="(index,item) in nation" ng-if="index>=3" ng-style="{backgroundImage:'url('+item.url+')'}">
+                    <p>{{item.name}}</p>
+                    <p>{{item.Ename}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+</div>

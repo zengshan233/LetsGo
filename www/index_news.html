@@ -1,0 +1,15 @@
+<ion-view>
+    <div class="bar bar-header news_info">
+        <button ng-click="back()" class="button button-clear iconfont icon-fanhui"></button>
+        <h1 class="title">消息通知</h1>
+    </div>
+    <div class="news-blank"></div>
+    <div class="my" ng-repeat="item in data">
+        <p><span class="iconfont {{item.ico}}"></span> {{item.name}}</p>
+        <p>></p>
+    </div>
+    <div class="ad">
+        <p>Booking酒店返现活动</p>
+        <div class="row"><img class="col-90" src="img/booking_03.png" alt="" /></div>
+    </div>
+</ion-view>

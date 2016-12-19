@@ -1,0 +1,121 @@
+<ion-view>
+    <span class="iconfont icon-fanhuidingbu1 back-to-top" ng-show='top' ng-click="toTop()"> </span>
+    <div class="bar bar-header row">
+        <span class="iconfont icon-saoyisaoshandian col-10" on-touch="scanBarcode()"></span>
+        <p class="col-80" on-touch="search()"><span class="iconfont icon-icon1"></span>搜索目的地/折扣/关键字</p>
+        <span class="iconfont icon-iconfontmark col-10" on-touch="news()"></span>
+    </div>
+    <ion-content delegate-handle="content1" on-scroll='scroll()'>
+        <ion-slide-box auto-play="true" does-continue="true" class="banner-img">
+            <ion-slide ng-repeat='item in img '>
+                <div class="box image" ng-style="{backgroundImage:'url( '+item.url+') '}">
+                    <p>{{item.con}}</p>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+        <ion-slide-box auto-play="false" does-continue="false" class="options">
+            <ion-slide>
+                <div class="box row">
+                    <div class="col option" ng-repeat='item in options[0] '>
+                        <a class="link" href="{{'#/common1/'+item.id}}">
+                            <span class="iconfont {{item.ico}}" ng-style='{color: item.col} '></span>
+                            <p>{{item.con}}</p>
+                        </a>
+                    </div>
+                </div>
+                <div class="box row">
+                    <div class="col option" ng-repeat='item in options[1] '>
+                        <a class="link" href="{{'#/common1/'+item.id}}">
+                            <span class="iconfont {{item.ico}}" ng-style='{color: item.col} '></span>
+                            <p>{{item.con}}</p>
+                        </a>
+                    </div>
+                </div>
+            </ion-slide>
+            <ion-slide>
+                <div class="box row">
+                    <div class="col-25 option" ng-repeat='item in options[2] '>
+                        <a class="link" href="{{'#/common1/'+item.id}}">
+                            <span class="iconfont {{item.ico}}" ng-style='{color: item.col} '></span>
+                            <p>{{item.con}}</p>
+                        </a>
+                    </div>
+                </div>
+            </ion-slide>
+        </ion-slide-box>
+
+        <div class="row service" ng-repeat='index in service '>
+            <p class="col" ng-repeat="item in index">
+                <a class="link" href="{{'#/common1/'+item.id}}">
+                    <span class="iconfont {{item.ico}}"></span>
+                    <span>{{item.con}}</span>
+                </a>
+            </p>
+        </div>
+
+        <div>
+            <ion-scroll delegate-handle="scroll0" direction="x" class="hots">
+                <div class="hot_con">
+                    <span class="current">当季热门</span>
+                    <p ng-repeat="(index,item) in country">
+                        <a class='link ' href="{{'#/common2/'+index}}">
+                            <span class="iconfont icon-shizhong"></span>
+                            <span>{{item}}</span>
+                        </a>
+                    </p>
+                </div>
+
+            </ion-scroll>
+
+        </div>
+
+        <div class="row img">
+            <a class="col-40" href="#/common3/0"><img class="img1" src="img/a_02.png"></img>
+            </a>
+            <div class="col-60">
+                <a href="#/common3/1"><img class="img2" src="img/a_04.png"></img>
+                </a>
+                <div class="row right_down">
+                    <a class="col" href="#/common3/2"><img class="img3" src="img/a_06.png"></img>
+                    </a>
+                    <a class="col" href="#/common3/3"><img class="img4" src="img/a_08.png"></img>
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <p class="current_hot">当季热门</p>
+        <div class="hot_now" ng-repeat="(num,item) in trip">
+            <div class="tripImg" ng-style="{backgroundImage:'url( '+item+') '}"></div>
+            <ion-scroll delegate-handle="scroll1" direction="x">
+                <div class="trip_wrapper">
+                    <div class="trip" ng-repeat="val in place[num]">
+                        <a class="link" href="{{'#/goods/'+(num+1)+'/'+val.id}}">
+                            <p class="goods-pic" ng-style="{backgroundImage:'url( '+val.url+') '}"></p>
+                            <p class="trip_text">{{val.con}}</p>
+                            <p><span>{{val.price}}</span>元起</p>
+                        </a>
+                    </div>
+                </div>
+            </ion-scroll>
+        </div>
+        <p class="current_hot">猜你喜欢</p>
+
+
+        <div class="like" ng-repeat="item in like">
+            <a class="link" href="{{'#/goods/7/ '+item.id}}">
+                <p class="like-goods-img" ng-style="{backgroundImage:'url( '+item.url+') '}"></p>
+                <p class="like-con">{{item.con}}</p>
+                <div class="like_price">
+                    <p>已售: {{item.num}}件</p>
+                    <p><span>{{item.price}}</span>元起</p>
+                </div>
+            </a>
+        </div>
+
+        <ion-infinite-scroll on-infinite="getData()" spinner="lines" ng-show="show"></ion-infinite-scroll>
+        <p class="title" ng-show="over">数据已经加载到底了哦！</p>
+
+
+    </ion-content>
+</ion-view>

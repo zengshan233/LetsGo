@@ -1,0 +1,218 @@
+html,body{
+    margin: 0;
+    padding: 0;
+    font-size: 15px;
+    width: 100%;
+    height: 100%;
+}
+
+.nav{
+    width: 100%;
+    position: fixed;
+    background: #01021e;
+    background-repeat: repeat;
+    z-index: 999;
+    color: white;
+    .row{
+        padding-top: 0;
+        padding-bottom: 0;
+        p{
+            text-align: center;
+            margin: 0;
+            padding: 1rem 0 0.8rem 0;
+            border-bottom:2px solid #01021e;
+            &.on{
+                border-color: red;
+                color: orange;
+            }
+            &.off{
+             border-color: #01021e;
+                color: white;
+            }
+        }
+    }
+}
+
+
+
+.find-wrapper{
+    height: 100%;
+    .swiper-wrapper{
+        padding: 0;
+    }
+    
+}
+.find,.guild,.rank-con{
+    margin-top: 35px;
+    width: 100%;
+}
+.find{
+    background: #01021e;
+}
+.see-the-world{
+    height:18rem;
+    position: relative;
+    background-size: 100% 18rem;
+   background-image:url(../img/world1.jpg);
+   .see{
+     position: absolute;
+     left: 0;
+     top: 0;
+     right: 0;
+     bottom: 0;
+   text-align: center;
+   z-index: 3;
+   padding-top: 8rem;
+   h2{
+       font-weight: bold;
+   
+   color: white;
+   font-size: 1.3rem;
+       
+   }
+   p{
+   color: white;
+   font-size: 0.8rem;
+   }
+   }
+
+}
+
+.img-con{
+    background: orange;
+    height: 50px;
+    width: 200px;
+    margin: 20px auto;
+}
+.just-go{
+          margin-bottom: 0;
+          padding-left: 1.5rem;
+          color: white;
+          font-size: 1rem;
+          .iconfont{
+              color: white;
+              font-size: 5rem;
+          }
+      }
+.days{
+    padding: 0.8rem;
+    .img{
+        height: 14rem;
+        background-size: 100% 14rem;
+    }
+    p{
+        background: white;
+        margin: 0;
+        padding: 0.5rem 0 0.3rem 0.5rem;
+        &.con{
+            color: #000;
+            font-size: 1rem;
+            font-weight: bold;
+            text-overflow:ellipsis; 
+        white-space:nowrap; 
+        overflow:hidden;
+        }
+        &.users{
+            font-size: 0.8rem;
+            color: #999;
+            padding-top: 0;
+            .iconfont{
+                margin-right: 0.2rem;
+                font-size: 1.5rem;
+                &:last-child{
+                    margin-left: 1rem;
+                    line-height: 2rem;
+                }
+            }
+        }
+    }
+}
+.guild-con{
+    background: #867997;
+    .guild{
+
+   
+    background-image:url('../img/world2.jpg');
+    .hot{
+        text-align: left;
+        padding: 0 0 0 1rem;
+        color: white;
+        font-weight: bold;
+        margin-top: 5rem;
+        font-size: 1rem;
+    }
+     }
+    .row{
+        padding-top: 0;
+      .col{
+           padding-top: 0;
+           .country{
+              height: 12rem;
+              background-size: 100% 12rem;
+              padding: 1rem 0 0 0.5rem;
+              color: white;
+              margin-bottom: 0.5rem;
+              p:first-child{
+                  font-size: 1.5rem;
+                  margin-bottom: 0;
+
+              }
+              p:last-child{
+                  font-size: 1rem;
+              }
+
+          }
+      }
+    }
+}
+
+.rank-con{
+    background: #443144;
+   .rank{
+    background-image: url('../img/12.jpg');
+    margin-top: 0!important;
+    .hot{
+        text-align: left;
+        padding: 0 0 0 1rem;
+        margin-top: 5rem;
+        font-weight: bold;
+        font-size: 1rem;
+    }
+}
+.rank-detail{
+     padding:0 0.5rem;
+     margin-bottom: 1rem;
+    .bg{
+        height: 15rem;
+        background-size: 100% 15rem;
+        background-position: center;
+        text-align: center;
+        padding-top: 8rem;
+        p{
+            color: white;
+            &:first-child{
+                .iconfont{
+                    color: white;
+                    font-size: 1.5rem;
+                }
+            }
+            &:last-child{
+                font-size: 1.5rem;
+                font-weight: bold;
+            }
+        }
+    }
+    .row{
+        background: white;
+        text-align: center;
+        padding: 0.3rem 0;
+        p{
+            margin-bottom: 0;
+        &:first-child{
+            border-right: 1px solid #bfbfbf;
+        }
+        }
+        
+    }
+}
+}
